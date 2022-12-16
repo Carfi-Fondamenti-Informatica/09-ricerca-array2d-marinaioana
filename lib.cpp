@@ -11,13 +11,12 @@ bool mm( char nomi [10][10], char nomedue [1][20], int &contatore){
 }
 bool funzione (char nomi [10][20], char nomedue [1][20], int &contatore){
     for (contatore = 0; contatore < 10; contatore++){
-        if ( mm (nomi, nomedue, contatore)){
+        if ( mm (nomi, nomedue, &contatore)){
             return true;
-    }
-
+            }
         }return false;
 }
-void inizio (char nomi[][20], char nomedue[1][20], int m){
+void inizio (char nomi[][20],int m){
     for (int i=0; i<m; i++){
         for (int j=0; j< 20; j++){
           nomi [i][j]= ' ';
